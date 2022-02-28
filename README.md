@@ -1,4 +1,4 @@
-# smart_device
+# Fitness
 Проект акселератора в Лиге А
 
 # Gulp template Liga A

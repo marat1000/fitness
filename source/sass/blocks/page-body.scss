@@ -1,7 +1,5 @@
 .page-body {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
 
   display: flex;
   overflow-x: hidden;
@@ -10,18 +8,17 @@
   min-height: 100%;
   margin: 0;
   padding: 0;
-  color: $color-1;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
 
 .page-body__inner {
-  max-width: 1450px;
+  max-width: $desktop-max-content;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 0 25px;
+    padding: 0 45px;
   }
 
   @media (max-width: $mobile-width-max) {
