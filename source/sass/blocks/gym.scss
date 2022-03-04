@@ -1,6 +1,7 @@
 .gym {
   min-height: 635px;
   padding-top: 120px;
+  padding-bottom: 235px;
 
   @media (max-width: $tablet-width-max) {
     min-height: 658px;
@@ -10,7 +11,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 0;
+    padding-bottom: 70px;
     padding-top: 23px;
   }
 }
@@ -230,7 +231,11 @@
     transform: translate(-50%, -50%) scale(0.73);
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
   &:active {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }

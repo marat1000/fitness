@@ -93,7 +93,7 @@
           <span>Групповые занятия</span>
           <span>Кардио-зона</span>
         </div>
-        <a href="#" class="intro__button button" aria-label="Купить абонемент">Купить абонемент</a>
+        <a href="#season-tickets" class="intro__button button" aria-label="Купить абонемент">Купить абонемент</a>
       </div>
       <picture>
         <!-- 1х: 324x390px; 2x: 648x780px -->
@@ -125,7 +125,6 @@
     <div class="page-body__inner gym__wrapper">
       <div class="gym__text">
         <h2>Тренажерный зал</h2>
-
         <span>Просторный зал площадью 900 кв/м</span>
         <p>
           Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
@@ -138,13 +137,13 @@
       </div>
       <div class="gym__picture">
         <picture>
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <!-- 1х: 320x313px; 2x: 540x626px -->
           <source type="image/webp" media="(max-width:767px)" srcset="img/gym-mobile@1x.webp, img/gym-mobile@2x.webp 2x">
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <!-- 1х: 320x313px; 2x: 540x626px -->
           <source src="img/gym-mobile@1x.jpg" media="(max-width:767px)" srcset="img/gym-mobile@2x.jpg 2x">
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <!-- 1х: 678x345px; 2x: 1356x690px -->
           <source type="image/webp" media="(max-width:1199px)" srcset="img/gym-tablet@1x.webp, img/gym-tablet@2x.webp 2x">
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <!-- 1х: 678x345px; 2x: 1356x690px -->
           <source src="img/gym-tablet@1x.jpg" media="(max-width:1199px)" srcset="img/gym-tablet@2x.jpg 2x">
           <!-- 1х: 660x401px; 2x: 1320x802px -->
           <source type="image/webp" srcset="img/gym-desktop@1x.webp, img/gym-desktop@2x.webp 2x">
@@ -152,7 +151,7 @@
           <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала">
         </picture>
         <div class="gym__preview">
-          <button class="gym__btn" type="button" aria-label="Воспроизвести видео">
+          <button class="gym__button" type="button" aria-label="Воспроизвести видео">
             <svg width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="50" cy="50" r="49" stroke="url(#gradient1)" stroke-opacity="0.2" stroke-width="2"></circle>
               <circle cx="50" cy="50" r="36" fill="url(#gradient2)"></circle>
@@ -168,6 +167,188 @@
                 </linearGradient>
               </defs>
             </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="season-tickets" id="season-tickets">
+    <div class="page-body__inner season-tickets__wrapper">
+      <h2>Абонементы</h2>
+      <div class="season-tickets__tabs-wrapper tabs">
+        <div class="tabs__full-range"></div>
+        <a class="tabs__item tabs__item_active" href="#tab1" aria-label="Выбрать абонемент на 1 месяц">1 месяц
+        </a>
+        <a class="tabs__item" href="#tab2" aria-label="Выбрать абонемент на 6 месяцев">6 месяцев
+        </a>
+        <a class="tabs__item" href="#tab3" aria-label="Выбрать абонемент на 12 месяцев">12 месяцев
+        </a>
+      </div>
+      <div class="season-tickets__rates-wrapper rates">
+        <ul class="rates__list rates__list_active" id="tab1">
+          <li class="rates__item">
+            <h3>С тренером</h3>
+            <span>12 занятий</span>
+            <div class="rates__price">5000
+              <b>5000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <div class="rates__price">1700
+              <b>1700</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <div class="rates__price">2700
+              <b>2700</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="rates__list" id="tab2">
+          <li class="rates__item">
+            <h3>С тренером</h3>
+            <span>72 занятия</span>
+            <div class="rates__price">20000
+              <b>20000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <div class="rates__price">7000
+              <b>7000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <div class="rates__price">10000
+              <b>10000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="rates__list" id="tab3">
+          <li class="rates__item">
+            <h3>С тренером</h3>
+            <span>144 занятия</span>
+            <div class="rates__price">35000
+              <b>35000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <div class="rates__price">12000
+              <b>12000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+          <li class="rates__item">
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <div class="rates__price">18000
+              <b>18000</b>
+              <svg width="30" height="42">
+                <use xlink:href="#icon-ruble"></use>
+              </svg>
+            </div>
+            <a href="#">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="page-body__inner promo__wrapper">
+      <div class="promo__content">
+        <div class="promo__container">
+          <h2>Super Games</h2>
+          <div class="promo__date">
+            <b>Дата</b>
+            <div class="promo__date-wrapper">
+              <span>7</span>
+              <div class="promo__date-inner">
+                <span>Марта</span>
+                <span>2019</span>
+              </div>
+            </div>
+            <div class="promo__time">
+              <b>Время</b>
+              <span>12:00</span>
+            </div>
+          </div>
+        </div>
+        <p>Ежегодные соревнования по CrossFit</p>
+        <a href="#">Заполнить заявку</a>
+      </div>
+    </div>
+  </section>
+  <section class="gym">
+    <div class="page-body__inner gym__wrapper">
+      <div class="gym__text">
+        <h2>Тренажерный зал</h2>
+        <span>Просторный зал площадью 900 кв/м</span>
+        <p>
+          Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+          Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+        </p>
+        <p>
+          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+          несколько оборудованных залов для различных видов групповых занятий.
+        </p>
+      </div>
+      <div class="gym__picture">
+        <picture>
+          <!-- 1х: 320x313px; 2x: 540x626px -->
+          <source type="image/webp" media="(max-width:767px)" srcset="img/gym-mobile@1x.webp, img/gym-mobile@2x.webp 2x">
+          <!-- 1х: 320x313px; 2x: 540x626px -->
+          <source src="img/gym-mobile@1x.jpg" media="(max-width:767px)" srcset="img/gym-mobile@2x.jpg 2x">
+          <!-- 1х: 678x345px; 2x: 1356x690px -->
+          <source type="image/webp" media="(max-width:1199px)" srcset="img/gym-tablet@1x.webp, img/gym-tablet@2x.webp 2x">
+          <!-- 1х: 678x345px; 2x: 1356x690px -->
+          <source src="img/gym-tablet@1x.jpg" media="(max-width:1199px)" srcset="img/gym-tablet@2x.jpg 2x">
+          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <source type="image/webp" srcset="img/gym-desktop@1x.webp, img/gym-desktop@2x.webp 2x">
+          <!-- 1х: 660x401px; 2x: 1320x802px -->
+          <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала">
+        </picture>
+        <div class="gym__preview">
+          <button class="gym__button" type="button" aria-label="Воспроизвести видео">
           </button>
         </div>
       </div>
