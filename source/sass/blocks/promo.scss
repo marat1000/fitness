@@ -1,8 +1,8 @@
 .promo {
+  line-height: 1.5;
+
   margin-bottom: 118px;
   padding-top: 121px;
-
-  line-height: 1.5;
   color: $color-2;
 
   @media (max-width: $tablet-width-max) {
@@ -17,51 +17,49 @@
 }
 
 .promo__wrapper {
-  min-height: 500px;
   display: flex;
 
+  min-height: 500px;
   background-image: url("../img/promo-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 520px 0;
-  background-size: contain;
   background-clip: content-box;
+  background-size: contain;
 
   @media (min-resolution: $retina-dppx),
-  (min-resolution: $retina-dpi) {
+    (min-resolution: $retina-dpi) {
     background-image: url("../img/promo-bg-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-width-max) {
     max-width: 768px;
     min-height: 290px;
-
     background-position: 337px 0;
   }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     max-width: 320px;
-    min-height: 815px;
-
+    min-height: 593px;
     background-image: url("../img/promo-bg-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 293px;
     background-origin: content-box;
 
     @media (min-resolution: $retina-dppx),
-    (min-resolution: $retina-dpi) {
+      (min-resolution: $retina-dpi) {
       background-image: url("../img/promo-bg-mobile@2x.jpg");
     }
   }
 }
 
 .promo__content {
-  width: 500px;
   display: flex;
   flex-direction: column;
+
+  width: 500px;
   padding: 0 78px;
   padding-bottom: 20px;
-
   background-color: $color-11;
 
   @media (max-width: $tablet-width-max) {
@@ -77,45 +75,41 @@
 }
 
 .promo__content a {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.17;
+
   display: block;
   width: 100%;
-
   padding: 24px 20px;
-
-  font-size: 0.75rem;
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: $color-2;
-  text-transform: uppercase;
-  text-align: center;
-
-  border: 4px solid $color-2;
   cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-2;
+  border: 4px solid $color-2;
 
   @media (max-width: $tablet-width-max) {
-    padding: 12px 15px;
-
     font-size: 0.62rem;
 
+    padding: 12px 15px;
     border-width: 2px;
   }
 }
 
 .promo__content p {
-  width: 300px;
+  font-size: 1.12rem;
 
+  width: 300px;
   margin-top: 0;
   margin-bottom: 46px;
   padding: 0;
-
-  font-size: 1.12rem;
   text-align: left;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 28px;
-
     font-size: 12px;
+
+    margin-bottom: 28px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -126,57 +120,55 @@
 .promo__container {
   display: flex;
   justify-content: space-between;
-
   margin-top: 83px;
   margin-bottom: 9px;
 
   h2 {
-    margin: 0;
-    margin-right: 49px;
-
     font-family: $font-1;
     font-size: 5.62rem;
-    line-height: 1;
-    letter-spacing: 0.03em;
     font-weight: 700;
+    line-height: 1;
+
+    margin: 0;
+    margin-right: 49px;
     text-align: left;
+    letter-spacing: 0.03em;
   }
 
   @media (max-width: $tablet-width-max) {
     height: 105px;
-
     margin-top: 44px;
     margin-bottom: 4px;
 
     h2 {
+      font-size: 3.25rem;
+
       margin-right: auto;
       padding-top: 5px;
-
-      font-size: 3.25rem;
     }
   }
 }
 
 .promo__date {
-  text-align: left;
   width: 100%;
   margin-top: -3px;
 
+  text-align: left;
+
   b {
-    display: block;
-
-    margin: 0;
-    padding-bottom: 5px;
-
     font-size: 1.12rem;
     font-weight: 400;
+
+    display: block;
+    margin: 0;
+    padding-bottom: 5px;
   }
 
   span {
-    display: block;
-
     font-size: 2.5rem;
     font-weight: 700;
+
+    display: block;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -184,9 +176,9 @@
     margin-top: 5px;
 
     b {
-      padding-bottom: 4px;
-
       font-size: 0.75rem;
+
+      padding-bottom: 4px;
     }
 
     span {
@@ -201,19 +193,17 @@
 
 .promo__time {
   width: 90%;
-
   margin-top: 17px;
 
   span {
-    padding-top: 3px;
     line-height: 1;
 
+    padding-top: 3px;
     border-top: 1px solid $color-2;
   }
 
   @media (max-width: $tablet-width-max) {
     width: 100%;
-
     margin-top: 2px;
 
     span {
@@ -226,25 +216,24 @@
 
 .promo__date-inner {
   display: block;
-
   margin-top: 5px;
   margin-left: auto;
 
   span {
-    margin-top: -6px;
-
     font-size: 0.87rem;
     font-weight: 400;
+
+    margin-top: -6px;
   }
 
   @media (max-width: $tablet-width-max) {
     margin-top: 10px;
 
     span {
+      font-size: 0.62rem;
+
       margin-top: 0;
       transform: translate(3px, -7px);
-
-      font-size: 0.62rem;
     }
 
     span:last-child {
@@ -254,11 +243,11 @@
 }
 
 .promo__date-wrapper {
-  width: 65px;
-  height: 48px;
   display: flex;
   align-items: center;
 
+  width: 65px;
+  height: 48px;
   border-top: 1px solid $color-2;
 
   b {
@@ -268,7 +257,6 @@
   @media (max-width: $tablet-width-max) {
     width: 40px;
     height: 33px;
-
     margin-top: -4px;
   }
 }

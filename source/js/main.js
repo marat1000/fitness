@@ -2,12 +2,10 @@
 
 // Переключение табов в блоке season-tickets
 
-tabs('.season-tickets__wrapper');
 
-function tabs(target) {
-  let seasonTickets = document.querySelector('.season-tickets');
-  let tab = seasonTickets.querySelector(target);
-  if (!(seasonTickets && tab)) {
+(function () {
+  let tab = document.querySelector('.season-tickets__wrapper');
+  if (!tab) {
     return;
   }
   let showTab = function (tabsItemTarget) {
@@ -38,4 +36,34 @@ function tabs(target) {
     evt.preventDefault();
     showTab(tabsItem);
   });
-}
+})();
+
+// Слайдер
+
+var $;
+$(document).ready(function () {
+  $('.trainers__list').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [{
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+});

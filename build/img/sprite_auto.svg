@@ -8,7 +8,7 @@
       <stop offset="0.885" stop-color="#B80027"/>
     </linearGradient>
   </defs><symbol id="icon-arrow-left" viewBox="0 0 18 34">
-<path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
+  <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 18 34">
 <path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
 </symbol><symbol id="icon-fb" viewBox="0 0 12 24">

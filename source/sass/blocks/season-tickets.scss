@@ -1,26 +1,24 @@
 .season-tickets {
   position: relative;
-  padding-bottom: 120px;
-
-  background-color: $color-5;
   overflow-x: clip;
+  padding-bottom: 120px;
+  background-color: $color-5;
 
   &::after {
-    content: "";
     position: absolute;
     right: calc(50vw - 865px);
     bottom: -150px;
-
     display: block;
     width: 470px;
     height: 494px;
 
+    content: "";
     background-image: url("../img/season-tickets-bg@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dppx),
-    (min-resolution: $retina-dpi) {
+      (min-resolution: $retina-dpi) {
       background-image: url("../img/season-tickets-bg@2x.png");
     }
   }
@@ -29,10 +27,11 @@
     padding-bottom: 57px;
 
     &::after {
-      width: 423px;
-      height: 444px;
       right: calc(50vw - 458px);
       bottom: -122px;
+
+      width: 423px;
+      height: 444px;
     }
   }
 
@@ -48,41 +47,37 @@
 .season-tickets__wrapper {
   display: flex;
   flex-direction: column;
-
   padding-top: 120px;
-
   text-align: center;
 
   h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-
     font-family: $font-1;
     font-size: 3.06rem;
     font-weight: 700;
+    line-height: 1;
+
+    margin-top: 0;
+    margin-bottom: 15px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    line-height: 1;
     color: $color-1;
   }
 
   @media (max-width: $tablet-width-max) {
     width: 88%;
     max-width: 800px;
-
     padding-top: 99px;
 
     h2 {
-      margin-bottom: 10px;
-
       font-size: 2.62rem;
+
+      margin-bottom: 10px;
     }
   }
 
   @media (max-width: $mobile-width-max) {
     width: 100%;
     max-width: 420px;
-
     padding-top: 68px;
 
     h2 {
@@ -94,13 +89,11 @@
 
 .season-tickets__tabs-wrapper {
   position: relative;
-
-  width: 340px;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
   align-items: center;
-
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 340px;
   margin: 0 auto;
   margin-bottom: 38px;
   padding: 0;
@@ -108,23 +101,22 @@
   @media (max-width: $tablet-width-max) {
     width: 59%;
     max-width: 332px;
-
     margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width-max) {
-    width: 100%;
-    max-width: 100%;
     justify-content: space-between;
 
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 33px;
   }
 }
 
 .season-tickets__rates-wrapper {
-  width: 1160px;
   display: flex;
 
+  width: 1160px;
   margin: 0 auto;
   padding: 0;
 
