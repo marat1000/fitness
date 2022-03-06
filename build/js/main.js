@@ -45,7 +45,7 @@ $(document).ready(function () {
   $('.trainers__list').slick({
     dots: false,
     infinite: false,
-    speed: 300,
+    speed: 200,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [{

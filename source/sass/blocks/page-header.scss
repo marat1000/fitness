@@ -31,6 +31,10 @@
       width: 67px;
     }
   }
+
+  &:hover {
+    opacity: initial;
+  }
 }
 
 .page-header__list {
