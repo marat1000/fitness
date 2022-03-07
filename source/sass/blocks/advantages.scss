@@ -1,11 +1,15 @@
 .advantages {
   width: 100%;
-  margin-bottom: 118px;
+  padding-bottom: 60px;
   background-color: #f8f9fc;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 50px;
+  }
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 68px;
-    padding-bottom: 55px;
+    padding-bottom: 8px;
   }
 }
 
