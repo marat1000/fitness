@@ -96,6 +96,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (max-width: $mobile-width-max) {
+    top: 55%;
+
+    width: 10px;
+    height: 20px;
+    background-size: contain;
+  }
 }
 
 .slick-prev {
@@ -114,6 +122,50 @@
   background-size: 100%;
 }
 
+.reviews__list {
+  .slick-arrow {
+    top: 35%;
+  }
+
+  .slick-prev {
+    left: -55px;
+  }
+
+  .slick-next {
+    right: -55px;
+  }
+
+  .slick-slide {
+    margin: 0 40px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    .slick-prev {
+      left: -35px;
+    }
+
+    .slick-next {
+      right: -35px;
+    }
+
+    .slick-slide {
+      img {
+        width: 68px;
+        height: 68px;
+      }
+    }
+
+    .slick-arrow {
+      top: 47%;
+    }
+  }
+}
+
 @media (max-width: $tablet-width-max) {
   .trainers__list {
     .slick-arrow {
@@ -123,14 +175,6 @@
 }
 
 @media (max-width: $mobile-width-max) {
-  .slick-arrow {
-    top: 55%;
-
-    width: 10px;
-    height: 20px;
-    background-size: contain;
-  }
-
   .trainers__list {
     .slick-arrow {
       top: 55%;

@@ -1,6 +1,6 @@
 'use strict';
 
-// Переключение табов в блоке season-tickets
+// Переключение табов в блоке .season-tickets
 
 
 (function () {
@@ -38,14 +38,14 @@
   });
 })();
 
-// Слайдер
+// Слайдеры
 
 var $;
 $(document).ready(function () {
   $('.trainers__list').slick({
     dots: false,
     infinite: false,
-    speed: 200,
+    speed: 1100,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [{
@@ -65,5 +65,8 @@ $(document).ready(function () {
       }
     }
     ]
+  });
+  $('.reviews__list').slick({
+    variableWidth: true
   });
 });
