@@ -1,0 +1,33 @@
+.socials-icons {
+  display: flex;
+  align-items: center;
+  transform: translate(5px);
+
+  @include reset;
+
+  @media (max-width: $mobile-width-max) {
+    transform: translate(-5px);
+
+    svg {
+      width: 32px;
+      height: 27px;
+    }
+  }
+}
+
+.socials-icons a {
+  display: block;
+  padding: 5px;
+}
+
+.socials-icons > :not(:last-child) {
+  margin-right: 14px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 20px;
+  }
+}

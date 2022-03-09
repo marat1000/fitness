@@ -626,47 +626,56 @@
       </section>
     </div>
   </div>
-  <section class="gym">
-    <div class="page-body__inner gym__wrapper">
-      <div class="gym__text">
-        <h2>Тренажерный зал</h2>
-        <span>Просторный зал площадью 900 кв/м</span>
-        <p>
-          Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-          Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-        </p>
-        <p>
-          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-          несколько оборудованных залов для различных видов групповых занятий.
-        </p>
-      </div>
-      <div class="gym__picture">
-        <picture>
-          <!-- 1х: 320x313px; 2x: 540x626px -->
-          <source type="image/webp" media="(max-width:767px)" srcset="img/gym-mobile@1x.webp, img/gym-mobile@2x.webp 2x">
-          <!-- 1х: 320x313px; 2x: 540x626px -->
-          <source src="img/gym-mobile@1x.jpg" media="(max-width:767px)" srcset="img/gym-mobile@2x.jpg 2x">
-          <!-- 1х: 678x345px; 2x: 1356x690px -->
-          <source type="image/webp" media="(max-width:1199px)" srcset="img/gym-tablet@1x.webp, img/gym-tablet@2x.webp 2x">
-          <!-- 1х: 678x345px; 2x: 1356x690px -->
-          <source src="img/gym-tablet@1x.jpg" media="(max-width:1199px)" srcset="img/gym-tablet@2x.jpg 2x">
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
-          <source type="image/webp" srcset="img/gym-desktop@1x.webp, img/gym-desktop@2x.webp 2x">
-          <!-- 1х: 660x401px; 2x: 1320x802px -->
-          <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала">
-        </picture>
-        <div class="gym__preview">
-          <button class="gym__button" type="button" aria-label="Воспроизвести видео">
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer class="page-footer page-body__footer">
-
+  <div class="page-footer__wrapper page-body__inner">
+    <a class="page-footer__logo">
+      <svg width="89" height="20">
+        <use xlink:href="#icon-logo"></use>
+      </svg>
+    </a>
+    <ul class="page-footer__nav nav">
+      <li class="nav__item">
+        <a href="#">Услуги</a>
+      </li>
+      <li class="nav__item">
+        <a href="#">Абонементы</a>
+      </li>
+      <li class="nav__item">
+        <a href="#">Акции</a>
+      </li>
+      <li class="nav__item">
+        <a href="#">Тренеры</a>
+      </li>
+      <li class="nav__item">
+        <a href="#">Расписание</a>
+      </li>
+    </ul>
+    <ul class="page-footer__socials-icons socials-icons">
+      <li class="socials-icons__item">
+        <a href="https://vk.com/" aria-label="Вконтакте">
+          <svg width="24" height="13">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-icons__item">
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <svg width="24" height="24">
+            <use xlink:href="#icon-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-icons__item">
+        <a href="https://www.facebook.com/" aria-label="Facebook">
+          <svg width="12" height="24">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 <script src="js/vendor.js"></script>
