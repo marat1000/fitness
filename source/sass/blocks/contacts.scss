@@ -1,0 +1,148 @@
+.contacts {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+
+  width: 410px;
+  margin-left: 120px;
+  color: $color-1;
+
+  h2 {
+    font-family: $font-1;
+    font-size: 3.06rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 38px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 61.5%;
+    margin: 0;
+    margin-left: 17.4%;
+    padding: 0;
+
+    h2 {
+      font-size: 2.62rem;
+      line-height: 1;
+      margin-bottom: 4.6vw;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 80%;
+    margin-left: calc(15% - 32px);
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.contacts__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 58%;
+    width: 1px;
+    height: 90%;
+
+    content: "";
+    background: #74819c;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 96.5%;
+
+    &::before {
+      left: 58.4%;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include reset;
+
+  &:first-child {
+    flex: 1 1 auto;
+    margin-left: 5px;
+  }
+
+  span {
+    font-weight: 700;
+    line-height: 1.5;
+
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin: 0;
+  }
+
+  a {
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-1;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &:first-child {
+      margin: 0;
+    }
+
+    span {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.12rem;
+    }
+
+    a {
+      font-size: 1.12rem;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+  }
+}

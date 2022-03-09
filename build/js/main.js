@@ -4,8 +4,8 @@
 
 
 (function () {
-  let tab = document.querySelector('.season-tickets__wrapper');
-  if (!tab) {
+  let tabs = document.querySelector('.tabs');
+  if (!tabs) {
     return;
   }
   let showTab = function (tabsItemTarget) {
@@ -19,6 +19,7 @@
     }
     let ratesListActive = ratesItem.parentElement.querySelector('.rates__list_active');
     if (tabsItemTarget === tabsItemActive || !ratesListActive) {
+      tabsItemTarget.blur();
       return;
     }
     tabsItemActive.classList.remove('tabs__item_active');
@@ -28,13 +29,12 @@
     ratesItem.classList.add('rates__list_active');
   };
 
-  tab.addEventListener('click', function (evt) {
-    let tabsItem = evt.target;
-    if (!tabsItem.classList.contains('tabs__item')) {
+  tabs.addEventListener('click', function (evt) {
+    if (!evt.target.classList.contains('tabs__item')) {
       return;
     }
     evt.preventDefault();
-    showTab(tabsItem);
+    showTab(evt.target);
   });
 })();
 
@@ -70,3 +70,13 @@ $(document).ready(function () {
     variableWidth: true
   });
 });
+
+// Маска
+
+let phone = document.querySelector('#user-phone');
+let MASK_OPTIONS = {
+  mask: '+{7}(000)0000000'
+};
+if (phone) {
+  IMask(phone, MASK_OPTIONS);
+}

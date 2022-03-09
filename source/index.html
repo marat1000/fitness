@@ -617,6 +617,54 @@
       </li>
     </ul>
   </section>
+  <div class="bottom-wrapper">
+    <div class="bottom-wrapper__left">
+      <form class="bottom-wrapper__form form" id="form" action="https://echo.htmlacademy.ru/" method="POST"
+            autocomplete="off">
+        <h2>Бесплатное занятие</h2>
+        <p>
+          <span class="visually-hidden">Введите ваше имя</span>
+          <input id="user-name" type="text" name="name" placeholder="Имя" minlength="1" maxlength="50"
+                 required>
+          <label for="user-name" class="visually-hidden">Имя</label>
+        </p>
+        <p>
+          <span class="visually-hidden">Введите ваш номер телефона</span>
+          <input id="user-phone" pattern=".{14,14}" name="phone" type="tel" placeholder="Телефон" minlength="14"
+                 maxlength="14" required>
+          <label for="user-phone" class="visually-hidden">Телефон</label>
+        </p>
+        <button form="form" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="bottom-wrapper__right">
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts__inner">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span>Адрес:</span>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item">
+              <span>График работы:</span>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+          </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span>Телефон:</span>
+              <a href="tel:88005555555" aria-label="Телефон">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <span>Email:</span>
+              <a href="mailto:omsk@supergym.ru" aria-label="Email">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
   <section class="gym">
     <div class="page-body__inner gym__wrapper">
       <div class="gym__text">
