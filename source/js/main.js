@@ -2,7 +2,6 @@
 
 // Переключение табов в блоке .season-tickets
 
-
 (function () {
   let tabs = document.querySelector('.tabs');
   if (!tabs) {
@@ -44,7 +43,7 @@ var $;
 $(document).ready(function () {
   $('.trainers__list').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 1100,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -79,4 +78,17 @@ let MASK_OPTIONS = {
 };
 if (phone) {
   IMask(phone, MASK_OPTIONS);
+}
+
+// localStorage
+
+let formInputs = document.querySelectorAll('.form input');
+
+if (formInputs) {
+  formInputs.forEach((item) => {
+    item.value = localStorage.getItem(item.getAttribute('id'));
+    item.addEventListener('input', () => {
+      localStorage.setItem(item.getAttribute('id'), item.value);
+    });
+  });
 }

@@ -66,6 +66,7 @@
   height: 294px;
   text-align: center;
   color: $color-2;
+  transition: margin-left 250ms;
 
   @include reset;
 
@@ -88,7 +89,7 @@
   height: 294px;
   margin-right: 40px;
 
-  >b {
+  > b {
     font-size: 1.12rem;
     font-weight: 700;
 
@@ -102,7 +103,7 @@
       display: flex;
     }
 
-    >b {
+    > b {
       display: none;
     }
   }
@@ -111,7 +112,7 @@
     width: 268px;
     margin-right: 30px;
 
-    >b {
+    > b {
       margin-left: 5px;
     }
 
