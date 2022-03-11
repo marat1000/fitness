@@ -3,6 +3,7 @@
   overflow-x: clip;
   padding-bottom: 120px;
   background-color: $color-5;
+  transition: initial;
 
   &::after {
     position: absolute;
