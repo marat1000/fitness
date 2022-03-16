@@ -21,6 +21,7 @@
 
 .page-header__logo {
   margin-right: auto;
+  cursor: inherit;
 
   svg {
     @media (max-width: $tablet-width-max) {
