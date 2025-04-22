@@ -1,11 +1,7 @@
 # Fitness
 
-# Gulp template Liga A
-## Краткая инструкция по работе
-### Для начала работы у вас должен быть установлен:
-* Node.js v.10.15.3
-* Gulp v4
-* npm last version
+https://marat1000.github.io/fitness/
+
 ## Основные команды для работы
 * Установка - `npm i`
 * Запуск локального сервера - `npm start`
